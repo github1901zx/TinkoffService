@@ -1,4 +1,4 @@
-package com.alexanderpopov.model;
+package com.alexanderpopov.tinkoffservice.model;
 
 public enum Currency {
     RUB("RUB"),

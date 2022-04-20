@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538ec201-2819-4756-837b-aba86b0990e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/confin/ApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/confin/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/model/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/model/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/service/StockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/service/TinkoffStockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/exception/ErrorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/exception/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/exception/StockNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/config/ApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/config/ApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/model/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/StockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/service/TinkoffStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/TinkoffStockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -49,17 +55,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.alexanderpopov.exception" />
       <recent name="com.alexanderpopov.model" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.alexanderpopov.tinkoffservice" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +97,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650299034777</updated>
-      <workItem from="1650299036806" duration="4131000" />
+      <workItem from="1650299036806" duration="5581000" />
+      <workItem from="1650451096549" duration="4167000" />
     </task>
     <servers />
   </component>
@@ -102,6 +115,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

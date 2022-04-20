@@ -1,4 +1,4 @@
-package com.alexanderpopov.config;
+package com.alexanderpopov.tinkoffservice.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
