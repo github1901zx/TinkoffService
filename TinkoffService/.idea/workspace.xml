@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538ec201-2819-4756-837b-aba86b0990e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/dto/StockDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/dto/TickerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/FigiesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/StockPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/StocksPriceDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/TinkoffServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/TinkoffServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/StockService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/TinkoffStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/TinkoffStockService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.alexanderpopov.tinkoffservice.model" />
       <recent name="com.alexanderpopov.exception" />
       <recent name="com.alexanderpopov.model" />
     </key>
@@ -56,17 +60,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TinkoffServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="TinkoffService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.alexanderpopov.tinkoffservice.TinkoffServiceApplication" />
@@ -92,6 +85,7 @@
       <workItem from="1650451096549" duration="4996000" />
       <workItem from="1650542119197" duration="2000" />
       <workItem from="1650627130703" duration="3189000" />
+      <workItem from="1650712664238" duration="2605000" />
     </task>
     <servers />
   </component>

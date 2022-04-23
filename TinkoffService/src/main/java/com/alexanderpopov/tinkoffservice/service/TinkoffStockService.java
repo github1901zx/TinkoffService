@@ -3,8 +3,7 @@ package com.alexanderpopov.tinkoffservice.service;
 import com.alexanderpopov.tinkoffservice.dto.StockDto;
 import com.alexanderpopov.tinkoffservice.dto.TickerDto;
 import com.alexanderpopov.tinkoffservice.exception.StockNotFoundException;
-import com.alexanderpopov.tinkoffservice.model.Currency;
-import com.alexanderpopov.tinkoffservice.model.Stock;
+import com.alexanderpopov.tinkoffservice.model.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -12,10 +11,12 @@ import ru.tinkoff.invest.openapi.MarketContext;
 import ru.tinkoff.invest.openapi.OpenApi;
 import ru.tinkoff.invest.openapi.model.rest.MarketInstrument;
 import ru.tinkoff.invest.openapi.model.rest.MarketInstrumentList;
+import ru.tinkoff.invest.openapi.model.rest.Orderbook;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
@@ -49,7 +50,8 @@ public class TinkoffStockService implements StockService{
         );
     }
 
-    public StockDto getStockByTikers (TickerDto tickersDto){
+    @Override
+    public StockDto getStockByTickers (TickerDto tickersDto){
         List<CompletableFuture<MarketInstrumentList>> marketInstruments = new ArrayList<>();
         tickersDto.getTickers().forEach(ticker -> marketInstruments.add(getMarketInstrumentTicker(ticker)));
         List<Stock> stocks = marketInstruments.stream()
@@ -70,5 +72,20 @@ public class TinkoffStockService implements StockService{
                         "Tinkoff"
                 ))
                 .collect(Collectors.toList());
+
+        return new StockDto(stocks);
+    }
+
+    public StockPrice getPrice(String figi){
+        Orderbook orderbook = openApi.getMarketContext().getMarketOrderbook(figi, 0).join().get();
+        return new StockPrice(figi, orderbook.getLastPrice().doubleValue());
+    }
+
+    @Override
+    public StocksPriceDto getPrices(FigiesDto figiesDto){
+        List<StockPrice> priceList = figiesDto.getFigies().stream()
+                .map(this::getPrice)
+                .collect(Collectors.toList());
+        return new StocksPriceDto(priceList);
     }
 }
