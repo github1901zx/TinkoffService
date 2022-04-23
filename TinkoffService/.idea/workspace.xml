@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538ec201-2819-4756-837b-aba86b0990e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/exception/ErrorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/exception/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/exception/StockNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/dto/StockDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/dto/TickerDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/config/ApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/config/ApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/model/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/model/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/StockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/service/TinkoffStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/TinkoffStockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/TinkoffServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/TinkoffServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/TinkoffStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexanderpopov/tinkoffservice/service/TinkoffStockService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +56,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1650299034777</updated>
       <workItem from="1650299036806" duration="5581000" />
-      <workItem from="1650451096549" duration="4167000" />
+      <workItem from="1650451096549" duration="4996000" />
+      <workItem from="1650542119197" duration="2000" />
+      <workItem from="1650627130703" duration="3189000" />
     </task>
     <servers />
   </component>
