@@ -4,7 +4,6 @@ import com.alexanderpopov.tinkoffservice.dto.StockDto;
 import com.alexanderpopov.tinkoffservice.dto.TickerDto;
 import com.alexanderpopov.tinkoffservice.model.FigiesDto;
 import com.alexanderpopov.tinkoffservice.model.Stock;
-import com.alexanderpopov.tinkoffservice.model.StockPrice;
 import com.alexanderpopov.tinkoffservice.model.StocksPriceDto;
 import com.alexanderpopov.tinkoffservice.service.StockService;
 import lombok.RequiredArgsConstructor;
